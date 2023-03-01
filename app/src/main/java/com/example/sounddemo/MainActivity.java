@@ -11,7 +11,6 @@ public class MainActivity extends AppCompatActivity {
     MediaPlayer mplayer;
 
     public void playAudio(View view){
-        mplayer = MediaPlayer.create(this, R.raw.music);
 
         mplayer.start();
     }
@@ -25,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        
+        mplayer = MediaPlayer.create(this, R.raw.music);
     }
 }
