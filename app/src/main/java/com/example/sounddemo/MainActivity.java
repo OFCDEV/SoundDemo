@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 scrubber.setProgress(mplayer.getCurrentPosition());
             }
-        },0,100); //Starting from 0 to every 100miliseconds
+        },0,1000); //Starting from 0 to every 1000miliseconds
 
 
         scrubber.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
